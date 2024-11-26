@@ -1,0 +1,39 @@
+.header-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-background .carousel-item {
+    height: 100vh; /* Set height to full viewport height */
+  }
+  
+  .carousel-image-wrapper {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .carousel-image {
+    object-fit: cover; /* Cover the entire area */
+    height: 100vh; /* Ensure the image covers the full height */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Grey overlay with transparency */
+    z-index: 1; /* Ensure the overlay is above the image but below the caption */
+  }
+  
+  .custom-caption {
+    position: absolute;
+    bottom: 20%; /* Adjust this value to move caption further away from the bottom */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white; /* Ensure text is readable on dark background */
+    z-index: 2; /* Ensure the caption is above the overlay */
+  }
+  
